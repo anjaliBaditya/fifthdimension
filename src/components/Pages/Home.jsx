@@ -1,3 +1,81 @@
+const faqData = [
+    {
+      title: '01. I need your services and how can i contact you throw email?',
+      content:
+        'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+    },
+    {
+      title: '02. What are the different types of service we provide?',
+      content:
+        'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+    },
+    {
+      title: '03. What are the different stages of the working process?',
+      content:
+        'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+    },
+    {
+      title: '04. What is the difference between direct and digital marketing?',
+      content:
+        'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+    },
+    {
+      title: '05. How can i payment proceed after complete project?',
+      content:
+        'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+    },
+  ];
+  
+  const postData = [
+    {
+      thumbnailSrc: '/images/creative-agency/post_1.jpeg',
+      title: 'How to keep fear from ruining your art business with confident',
+      date: '07 Mar 2023',
+      url: '/blog/blog-details',
+    },
+    {
+      thumbnailSrc: '/images/creative-agency/post_2.jpeg',
+      title: 'Artistic mind will be great for creation anything',
+      date: '22 Apr 2023',
+      url: '/blog/blog-details',
+    },
+    {
+      thumbnailSrc: '/images/creative-agency/post_3.jpeg',
+      title: 'AI will take over all job for human within few years',
+      date: '13 May 2023',
+      url: '/blog/blog-details',
+    },
+    {
+      thumbnailSrc: '/images/creative-agency/post_4.jpeg',
+      title: 'Your agency need to replace some artistic mind people',
+      date: '15 Mar 2023',
+      url: '/blog/blog-details',
+    },
+    {
+      thumbnailSrc: '/images/creative-agency/post_1.jpeg',
+      title: 'How to keep fear from ruining your art business with confident',
+      date: '07 Mar 2023',
+      url: '/blog/blog-details',
+    },
+    {
+      thumbnailSrc: '/images/creative-agency/post_2.jpeg',
+      title: 'Artistic mind will be great for creation anything',
+      date: '22 Apr 2023',
+      url: '/portfolio/portfolio-details',
+    },
+    {
+      thumbnailSrc: '/images/creative-agency/post_3.jpeg',
+      title: 'AI will take over all job for human within few years',
+      date: '13 May 2023',
+      url: '/portfolio/portfolio-details',
+    },
+    {
+      thumbnailSrc: '/images/creative-agency/post_4.jpeg',
+      title: 'Your agency need to replace some artistic mind people',
+      date: '15 Mar 2023',
+      url: '/portfolio/portfolio-details',
+    },
+  ];
 export default function Home() {
     pageTitle('home');
     return (
