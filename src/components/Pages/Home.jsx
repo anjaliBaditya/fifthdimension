@@ -1,3 +1,20 @@
+const testimonialData = [
+    {
+      text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
+      avatarName: 'Ansari Patron',
+      avatarDesignation: 'CEO at Delta',
+    },
+    {
+      text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
+      avatarName: 'Jhon Doe',
+      avatarDesignation: 'Manager at Delta',
+    },
+    {
+      text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
+      avatarName: 'Ramatam Coo',
+      avatarDesignation: 'MD at Delta',
+    },
+  ];
 const faqData = [
     {
       title: '01. I need your services and how can i contact you throw email?',
@@ -26,56 +43,6 @@ const faqData = [
     },
   ];
   
-  const postData = [
-    {
-      thumbnailSrc: '/images/creative-agency/post_1.jpeg',
-      title: 'How to keep fear from ruining your art business with confident',
-      date: '07 Mar 2023',
-      url: '/blog/blog-details',
-    },
-    {
-      thumbnailSrc: '/images/creative-agency/post_2.jpeg',
-      title: 'Artistic mind will be great for creation anything',
-      date: '22 Apr 2023',
-      url: '/blog/blog-details',
-    },
-    {
-      thumbnailSrc: '/images/creative-agency/post_3.jpeg',
-      title: 'AI will take over all job for human within few years',
-      date: '13 May 2023',
-      url: '/blog/blog-details',
-    },
-    {
-      thumbnailSrc: '/images/creative-agency/post_4.jpeg',
-      title: 'Your agency need to replace some artistic mind people',
-      date: '15 Mar 2023',
-      url: '/blog/blog-details',
-    },
-    {
-      thumbnailSrc: '/images/creative-agency/post_1.jpeg',
-      title: 'How to keep fear from ruining your art business with confident',
-      date: '07 Mar 2023',
-      url: '/blog/blog-details',
-    },
-    {
-      thumbnailSrc: '/images/creative-agency/post_2.jpeg',
-      title: 'Artistic mind will be great for creation anything',
-      date: '22 Apr 2023',
-      url: '/portfolio/portfolio-details',
-    },
-    {
-      thumbnailSrc: '/images/creative-agency/post_3.jpeg',
-      title: 'AI will take over all job for human within few years',
-      date: '13 May 2023',
-      url: '/portfolio/portfolio-details',
-    },
-    {
-      thumbnailSrc: '/images/creative-agency/post_4.jpeg',
-      title: 'Your agency need to replace some artistic mind people',
-      date: '15 Mar 2023',
-      url: '/portfolio/portfolio-details',
-    },
-  ];
 export default function Home() {
     pageTitle('home');
     return (
@@ -118,6 +85,14 @@ export default function Home() {
           thumbnailSrc="/images/creative-agency/why_choose_us_img_3.jpeg"
         />
         <Spacing lg="150" md="80" />
+        <section className="cs_p76_full_width">
+        <Spacing lg="143" md="75" />
+        <div className="container">
+          <SectionHeading title="Some recent news" subTitle="Our Blog" />
+          <Spacing lg="85" md="45" />
+        </div>
+        <PostCarousel data={postData} />
+      </section>
         <section className="cs_primary_bg">
           <Spacing lg="143" md="75" />
           <div className="container">
@@ -137,19 +112,7 @@ export default function Home() {
             <Spacing lg="135" md="65" />
           </div>
         </section>
-        <section>
-          <Spacing lg="143" md="75" />
-          <div className="container">
-            <SectionHeading title="Some featured work" subTitle="Portfolio" />
-            <Spacing lg="85" md="45" />
-            <Portfolio data={portfolioData} />
-            <Spacing lg="26" md="30" />
-            <div className="text-center">
-              <Button btnText="See All Project" btnUrl="/portfolio" />
-            </div>
-          </div>
-          <Spacing lg="150" md="80" />
-        </section>
+        
         <section className="cs_primary_bg cs_shape_animation_2">
           <Spacing lg="143" md="75" />
           <div className="cs_shape_1 position-absolute">
@@ -189,16 +152,7 @@ export default function Home() {
           ]}
           data={testimonialData}
         />
-        <section>
-          <div className="container">
-            <Cta
-              title="Is there a specific project or goal that you have in mind?"
-              btnText="Contact Us"
-              btnUrl="/contact"
-              bgUrl="/images/creative-agency/cta_bg.jpeg"
-            />
-          </div>
-        </section>
+        
         <section className="cs_p76_full_width">
           <Spacing lg="143" md="75" />
           <div className="container">
