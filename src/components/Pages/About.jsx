@@ -1,3 +1,49 @@
+const brandList = [
+    {
+      logoSrc: '/images/marketing-agency/brand_1.svg',
+      logoAlt: 'Brand',
+    },
+    {
+      logoSrc: '/images/marketing-agency/brand_2.svg',
+      logoAlt: 'Brand',
+    },
+    {
+      logoSrc: '/images/marketing-agency/brand_3.svg',
+      logoAlt: 'Brand',
+    },
+    {
+      logoSrc: '/images/marketing-agency/brand_4.svg',
+      logoAlt: 'Brand',
+    },
+  ];
+  const brandListDark = [
+    {
+      logoSrc: '/images/marketing-agency/brand_1_dark.svg',
+      logoAlt: 'Brand',
+    },
+    {
+      logoSrc: '/images/marketing-agency/brand_2_dark.svg',
+      logoAlt: 'Brand',
+    },
+    {
+      logoSrc: '/images/marketing-agency/brand_3_dark.svg',
+      logoAlt: 'Brand',
+    },
+    {
+      logoSrc: '/images/marketing-agency/brand_4_dark.svg',
+      logoAlt: 'Brand',
+    },
+  ];
+  const funfactData = [
+    { title: 'Happy Customers', number: '22k' },
+    { title: 'Work’s Completed', number: '15k' },
+    { title: 'Skilled Team Members', number: '121' },
+    { title: 'Most Valuable Awards', number: '15' },
+  ];
+
+
+
+
 export default function AboutPage({ darkMode }) {
     pageTitle('About');
     return (
@@ -11,15 +57,7 @@ export default function AboutPage({ darkMode }) {
           shape="shape_1"
         />
         <Spacing lg="75" md="60" />
-        <AboutStyle4
-          thumbnailSrc="/images/digital-agency/about_1.jpeg"
-          miniTitle="Company Info"
-          title="Marketing agency for your business"
-          subTitle="Our team, specializing in strategic digital marketing, partners with aiming the world's leading brands. Breaking from the norm, we push boundaries and do merge imaginative thinking posible.
-          dolores eos qui ratione voluptatem lipe sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam ever the world lorem ipsum."
-          btnText="See Our Services"
-          btnUrl="/service"
-        />
+        
         <Spacing lg="125" md="70" />
         <div className="container">
           <FunFact data={funfactData} />
